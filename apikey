@@ -1,0 +1,16 @@
+  const API_key = 'afc3adf29eb378563b6a29cc90b5c437';
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${city_name}&appid=${API_key}`;
+  api.openweathermap.org/data/2.5/forecast?id={city ID}&appid={API key}
+  <FlatList
+          data={apiData}
+          renderItem={({item}) => {
+            console.log(item.main);
+            // console.log(apiData);
+              <View style={styles.result_container}>
+                <Text style={styles.result_text}>
+                  {/* {item.main} */}
+                </Text>
+              </View>
+          }}
+          keyExtractor={(item) => item.id}
+        />
